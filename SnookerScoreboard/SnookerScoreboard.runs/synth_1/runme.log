@@ -1,0 +1,756 @@
+
+*** Running vivado
+    with args -log seven_segment.vds -m64 -mode batch -messageDb vivado.pb -notrace -source seven_segment.tcl
+
+
+****** Vivado v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source seven_segment.tcl -notrace
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at C:/Xilinx/Vivado/2016.2/data/boards/board_files/zz_updated_board_files/new/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+Command: synth_design -top seven_segment -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4896 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 319.359 ; gain = 112.191
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'seven_segment' [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:48]
+INFO: [Synth 8-3491] module 'd_type' declared at 'C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/d_type.vhd:34' bound to instance 'endTurnFF' of component 'd_type' [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'd_type' [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/d_type.vhd:39]
+WARNING: [Synth 8-614] signal 'D' is read in the process but is not in the sensitivity list [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/d_type.vhd:45]
+WARNING: [Synth 8-614] signal 'Qtemp' is read in the process but is not in the sensitivity list [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/d_type.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'd_type' (1#1) [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/d_type.vhd:39]
+WARNING: [Synth 8-614] signal 'turnLatch' is read in the process but is not in the sensitivity list [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:143]
+WARNING: [Synth 8-614] signal 'debounceCount' is read in the process but is not in the sensitivity list [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:143]
+WARNING: [Synth 8-614] signal 'currentPlayer' is read in the process but is not in the sensitivity list [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:143]
+WARNING: [Synth 8-614] signal 'score0' is read in the process but is not in the sensitivity list [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:143]
+WARNING: [Synth 8-614] signal 'score1' is read in the process but is not in the sensitivity list [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:143]
+INFO: [Synth 8-226] default block is never used [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:323]
+WARNING: [Synth 8-614] signal 'r_anodes' is read in the process but is not in the sensitivity list [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:319]
+WARNING: [Synth 8-614] signal 'sevenSegment' is read in the process but is not in the sensitivity list [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:319]
+INFO: [Synth 8-226] default block is never used [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:365]
+INFO: [Synth 8-256] done synthesizing module 'seven_segment' (2#1) [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:48]
+WARNING: [Synth 8-3331] design seven_segment has unconnected port foulMode
+WARNING: [Synth 8-3331] design seven_segment has unconnected port foulInc
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 356.691 ; gain = 149.523
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 356.691 ; gain = 149.523
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/constrs_1/imports/snooker/nexys4_ddr.xdc]
+Finished Parsing XDC File [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/constrs_1/imports/snooker/nexys4_ddr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/constrs_1/imports/snooker/nexys4_ddr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/seven_segment_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/seven_segment_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 659.328 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 659.328 ; gain = 452.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 659.328 ; gain = 452.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 659.328 ; gain = 452.160
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "sevenSegment[7]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sevenSegment[6]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sevenSegment[5]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sevenSegment[3]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sevenSegment[2]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sevenSegment[1]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "ballOn" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'Qtemp_reg' [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/d_type.vhd:48]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 659.328 ; gain = 452.160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 6     
+	  11 Input      7 Bit        Muxes := 6     
+	   9 Input      7 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 1     
+	   8 Input      6 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module seven_segment 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 6     
+	  11 Input      7 Bit        Muxes := 6     
+	   9 Input      7 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 1     
+	   8 Input      6 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 659.328 ; gain = 452.160
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design seven_segment has unconnected port foulMode
+WARNING: [Synth 8-3331] design seven_segment has unconnected port foulInc
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 659.328 ; gain = 452.160
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 659.328 ; gain = 452.160
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'ballOn_reg[7]' (FD) to 'ballOn_reg[6]'
+INFO: [Synth 8-3886] merging instance 'ballOn_reg[6]' (FD) to 'ballOn_reg[5]'
+INFO: [Synth 8-3886] merging instance 'ballOn_reg[5]' (FD) to 'ballOn_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ballOn_reg[4]' (FD) to 'ballOn_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ballOn_reg[3]' (FD) to 'ballOn_reg[2]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ballOn_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballOn_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (ballOn_reg[7]) is unused and will be removed from module seven_segment.
+WARNING: [Synth 8-3332] Sequential element (ballOn_reg[6]) is unused and will be removed from module seven_segment.
+WARNING: [Synth 8-3332] Sequential element (ballOn_reg[5]) is unused and will be removed from module seven_segment.
+WARNING: [Synth 8-3332] Sequential element (ballOn_reg[4]) is unused and will be removed from module seven_segment.
+WARNING: [Synth 8-3332] Sequential element (ballOn_reg[3]) is unused and will be removed from module seven_segment.
+WARNING: [Synth 8-3332] Sequential element (ballOn_reg[1]) is unused and will be removed from module seven_segment.
+WARNING: [Synth 8-3332] Sequential element (ballOn_reg[0]) is unused and will be removed from module seven_segment.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 659.328 ; gain = 452.160
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 659.328 ; gain = 452.160
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 659.328 ; gain = 452.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 659.328 ; gain = 452.160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+Found timing loop:
+     0: i_19/O (GATE_2_1_NOR)
+     1: i_19/I0 (GATE_2_1_NOR)
+     2: i_22/O (GATE_2_7_NAND)
+     3: i_22/I1 (GATE_2_7_NAND)
+     4: i_21/O (GATE_2_6_XOR)
+     5: i_21/I0 (GATE_2_6_XOR)
+     6: i_19/O (GATE_2_1_NOR)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_12/O (GATE_2_1_NOR)
+     1: i_12/I0 (GATE_2_1_NOR)
+     2: i_11/O (GATE_2_1_NOR)
+     3: i_11/I0 (GATE_2_1_NOR)
+     4: i_19/O (GATE_2_1_NOR)
+     5: i_19/I0 (GATE_2_1_NOR)
+     6: i_22/O (GATE_2_7_NAND)
+     7: i_22/I1 (GATE_2_7_NAND)
+     8: i_21/O (GATE_2_6_XOR)
+     9: i_21/I0 (GATE_2_6_XOR)
+    10: i_19/O (GATE_2_1_NOR)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_459/O (GATE_2_1_NOR)
+     1: i_459/I0 (GATE_2_1_NOR)
+     2: i_12/O (GATE_2_1_NOR)
+     3: i_12/I0 (GATE_2_1_NOR)
+     4: i_11/O (GATE_2_1_NOR)
+     5: i_11/I0 (GATE_2_1_NOR)
+     6: i_19/O (GATE_2_1_NOR)
+     7: i_19/I0 (GATE_2_1_NOR)
+     8: i_22/O (GATE_2_7_NAND)
+     9: i_22/I1 (GATE_2_7_NAND)
+    10: i_21/O (GATE_2_6_XOR)
+    11: i_21/I0 (GATE_2_6_XOR)
+    12: i_19/O (GATE_2_1_NOR)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_12/O (GATE_2_1_NOR)
+     1: i_12/I0 (GATE_2_1_NOR)
+     2: i_11/O (GATE_2_1_NOR)
+     3: i_11/I0 (GATE_2_1_NOR)
+     4: i_19/O (GATE_2_1_NOR)
+     5: i_19/I0 (GATE_2_1_NOR)
+     6: i_22/O (GATE_2_7_NAND)
+     7: i_22/I1 (GATE_2_7_NAND)
+     8: i_21/O (GATE_2_6_XOR)
+     9: i_21/I0 (GATE_2_6_XOR)
+    10: i_19/O (GATE_2_1_NOR)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_460/O (GATE_2_1_NOR)
+     1: i_460/I0 (GATE_2_1_NOR)
+     2: i_12/O (GATE_2_1_NOR)
+     3: i_12/I0 (GATE_2_1_NOR)
+     4: i_11/O (GATE_2_1_NOR)
+     5: i_11/I0 (GATE_2_1_NOR)
+     6: i_19/O (GATE_2_1_NOR)
+     7: i_19/I0 (GATE_2_1_NOR)
+     8: i_22/O (GATE_2_7_NAND)
+     9: i_22/I1 (GATE_2_7_NAND)
+    10: i_21/O (GATE_2_6_XOR)
+    11: i_21/I0 (GATE_2_6_XOR)
+    12: i_19/O (GATE_2_1_NOR)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_12/O (GATE_2_1_NOR)
+     1: i_12/I0 (GATE_2_1_NOR)
+     2: i_11/O (GATE_2_1_NOR)
+     3: i_11/I0 (GATE_2_1_NOR)
+     4: i_19/O (GATE_2_1_NOR)
+     5: i_19/I1 (GATE_2_1_NOR)
+     6: i_12/O (GATE_2_1_NOR)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_461/O (GATE_2_13)
+     1: i_461/I1 (GATE_2_13)
+     2: i_33/O (GATE_2_6_XOR)
+     3: i_33/I0 (GATE_2_6_XOR)
+     4: i_32/O (GATE_2_14_OR)
+     5: i_32/I0 (GATE_2_14_OR)
+     6: i_461/O (GATE_2_13)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_12/O (GATE_2_1_NOR)
+     1: i_12/I1 (GATE_2_1_NOR)
+     2: i_7/O (GATE_2_11)
+     3: i_7/I0 (GATE_2_11)
+     4: i_34/O (GATE_2_11)
+     5: i_34/I0 (GATE_2_11)
+     6: i_461/O (GATE_2_13)
+     7: i_461/I1 (GATE_2_13)
+     8: i_33/O (GATE_2_6_XOR)
+     9: i_33/I0 (GATE_2_6_XOR)
+    10: i_32/O (GATE_2_14_OR)
+    11: i_32/I0 (GATE_2_14_OR)
+    12: i_461/O (GATE_2_13)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_465/O (GATE_2_13)
+     1: i_465/I1 (GATE_2_13)
+     2: i_25/O (GATE_2_6_XOR)
+     3: i_25/I1 (GATE_2_6_XOR)
+     4: i_23/O (GATE_2_1_NOR)
+     5: i_23/I0 (GATE_2_1_NOR)
+     6: i_465/O (GATE_2_13)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_12/O (GATE_2_1_NOR)
+     1: i_12/I1 (GATE_2_1_NOR)
+     2: i_7/O (GATE_2_11)
+     3: i_7/I0 (GATE_2_11)
+     4: i_34/O (GATE_2_11)
+     5: i_34/I0 (GATE_2_11)
+     6: i_461/O (GATE_2_13)
+     7: i_461/I1 (GATE_2_13)
+     8: i_33/O (GATE_2_6_XOR)
+     9: i_33/I1 (GATE_2_6_XOR)
+    10: i_474/O (GATE_2_8_AND)
+    11: i_474/I0 (GATE_2_8_AND)
+    12: i_472/O (GATE_2_8_AND)
+    13: i_472/I0 (GATE_2_8_AND)
+    14: i_30/O (GATE_2_1_NOR)
+    15: i_30/I1 (GATE_2_1_NOR)
+    16: i_29/O (GATE_2_11)
+    17: i_29/I0 (GATE_2_11)
+    18: i_465/O (GATE_2_13)
+    19: i_465/I1 (GATE_2_13)
+    20: i_25/O (GATE_2_6_XOR)
+    21: i_25/I1 (GATE_2_6_XOR)
+    22: i_23/O (GATE_2_1_NOR)
+    23: i_23/I0 (GATE_2_1_NOR)
+    24: i_465/O (GATE_2_13)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_26/O (GATE_2_1_NOR)
+     1: i_26/I0 (GATE_2_1_NOR)
+     2: i_464/O (GATE_2_13)
+     3: i_464/I1 (GATE_2_13)
+     4: i_28/O (GATE_2_6_XOR)
+     5: i_28/I1 (GATE_2_6_XOR)
+     6: i_26/O (GATE_2_1_NOR)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_12/O (GATE_2_1_NOR)
+     1: i_12/I1 (GATE_2_1_NOR)
+     2: i_7/O (GATE_2_11)
+     3: i_7/I0 (GATE_2_11)
+     4: i_34/O (GATE_2_11)
+     5: i_34/I0 (GATE_2_11)
+     6: i_461/O (GATE_2_13)
+     7: i_461/I1 (GATE_2_13)
+     8: i_33/O (GATE_2_6_XOR)
+     9: i_33/I1 (GATE_2_6_XOR)
+    10: i_474/O (GATE_2_8_AND)
+    11: i_474/I0 (GATE_2_8_AND)
+    12: i_472/O (GATE_2_8_AND)
+    13: i_472/I0 (GATE_2_8_AND)
+    14: i_30/O (GATE_2_1_NOR)
+    15: i_30/I1 (GATE_2_1_NOR)
+    16: i_29/O (GATE_2_11)
+    17: i_29/I1 (GATE_2_11)
+    18: i_26/O (GATE_2_1_NOR)
+    19: i_26/I1 (GATE_2_1_NOR)
+    20: i_12/O (GATE_2_1_NOR)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_471/O (GATE_2_1_NOR)
+     1: i_471/I0 (GATE_2_1_NOR)
+     2: i_463/O (GATE_2_13)
+     3: i_463/I1 (GATE_2_13)
+     4: i_473/O (GATE_2_9_XNOR)
+     5: i_473/I1 (GATE_2_9_XNOR)
+     6: i_471/O (GATE_2_1_NOR)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_12/O (GATE_2_1_NOR)
+     1: i_12/I1 (GATE_2_1_NOR)
+     2: i_7/O (GATE_2_11)
+     3: i_7/I0 (GATE_2_11)
+     4: i_34/O (GATE_2_11)
+     5: i_34/I0 (GATE_2_11)
+     6: i_461/O (GATE_2_13)
+     7: i_461/I1 (GATE_2_13)
+     8: i_33/O (GATE_2_6_XOR)
+     9: i_33/I1 (GATE_2_6_XOR)
+    10: i_474/O (GATE_2_8_AND)
+    11: i_474/I0 (GATE_2_8_AND)
+    12: i_472/O (GATE_2_8_AND)
+    13: i_472/I1 (GATE_2_8_AND)
+    14: i_471/O (GATE_2_1_NOR)
+    15: i_471/I1 (GATE_2_1_NOR)
+    16: i_12/O (GATE_2_1_NOR)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_31/O (GATE_2_1_NOR)
+     1: i_31/I0 (GATE_2_1_NOR)
+     2: i_462/O (GATE_2_13)
+     3: i_462/I1 (GATE_2_13)
+     4: i_475/O (GATE_2_9_XNOR)
+     5: i_475/I0 (GATE_2_9_XNOR)
+     6: i_31/O (GATE_2_1_NOR)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_12/O (GATE_2_1_NOR)
+     1: i_12/I1 (GATE_2_1_NOR)
+     2: i_7/O (GATE_2_11)
+     3: i_7/I0 (GATE_2_11)
+     4: i_34/O (GATE_2_11)
+     5: i_34/I0 (GATE_2_11)
+     6: i_461/O (GATE_2_13)
+     7: i_461/I1 (GATE_2_13)
+     8: i_33/O (GATE_2_6_XOR)
+     9: i_33/I1 (GATE_2_6_XOR)
+    10: i_474/O (GATE_2_8_AND)
+    11: i_474/I1 (GATE_2_8_AND)
+    12: i_31/O (GATE_2_1_NOR)
+    13: i_31/I1 (GATE_2_1_NOR)
+    14: i_12/O (GATE_2_1_NOR)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_4/O (LUT5)
+     1: i_4/I4 (LUT5)
+     2: i_0/O (LUT5)
+     3: i_0/I4 (LUT5)
+     4: i_150/O (LUT6)
+     5: i_150/I4 (LUT6)
+     6: i_4/O (LUT5)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_0/O (LUT5)
+     1: i_0/I4 (LUT5)
+     2: i_150/O (LUT6)
+     3: i_150/I4 (LUT6)
+     4: i_4/O (LUT5)
+     5: i_4/I4 (LUT5)
+     6: i_0/O (LUT5)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_151/O (LUT6)
+     1: i_151/I5 (LUT6)
+     2: i_7/O (LUT3)
+     3: i_7/I2 (LUT3)
+     4: i_0/O (LUT5)
+     5: i_0/I4 (LUT5)
+     6: i_150/O (LUT6)
+     7: i_150/I4 (LUT6)
+     8: i_4/O (LUT5)
+     9: i_4/I4 (LUT5)
+    10: i_0/O (LUT5)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_4/O (LUT5)
+     1: i_4/I4 (LUT5)
+     2: i_0/O (LUT5)
+     3: i_0/I4 (LUT5)
+     4: i_150/O (LUT6)
+     5: i_150/I4 (LUT6)
+     6: i_4/O (LUT5)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_1/O (LUT5)
+     1: i_1/I3 (LUT5)
+     2: i_1/O (LUT5)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_0/O (LUT5)
+     1: i_0/I4 (LUT5)
+     2: i_150/O (LUT6)
+     3: i_150/I4 (LUT6)
+     4: i_4/O (LUT5)
+     5: i_4/I4 (LUT5)
+     6: i_0/O (LUT5)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_151/O (LUT6)
+     1: i_151/I4 (LUT6)
+     2: i_1/O (LUT5)
+     3: i_1/I3 (LUT5)
+     4: i_1/O (LUT5)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_4/O (LUT5)
+     1: i_4/I4 (LUT5)
+     2: i_0/O (LUT5)
+     3: i_0/I4 (LUT5)
+     4: i_150/O (LUT6)
+     5: i_150/I4 (LUT6)
+     6: i_4/O (LUT5)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_6/O (LUT5)
+     1: i_6/I3 (LUT5)
+     2: i_0/O (LUT5)
+     3: i_0/I4 (LUT5)
+     4: i_150/O (LUT6)
+     5: i_150/I4 (LUT6)
+     6: i_4/O (LUT5)
+     7: i_4/I4 (LUT5)
+     8: i_0/O (LUT5)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_5/O (LUT6)
+     1: i_5/I5 (LUT6)
+     2: i_5/O (LUT6)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_4/O (LUT5)
+     1: i_4/I4 (LUT5)
+     2: i_0/O (LUT5)
+     3: i_0/I4 (LUT5)
+     4: i_150/O (LUT6)
+     5: i_150/I4 (LUT6)
+     6: i_4/O (LUT5)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_151/O (LUT6)
+     1: i_151/I4 (LUT6)
+     2: i_1/O (LUT5)
+     3: i_1/I3 (LUT5)
+     4: i_1/O (LUT5)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_0/O (LUT5)
+     1: i_0/I4 (LUT5)
+     2: i_150/O (LUT6)
+     3: i_150/I4 (LUT6)
+     4: i_4/O (LUT5)
+     5: i_4/I4 (LUT5)
+     6: i_0/O (LUT5)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_2/O (LUT5)
+     1: i_2/I4 (LUT5)
+     2: i_2/O (LUT5)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_154/O (LUT6)
+     1: i_154/I0 (LUT6)
+     2: i_154/O (LUT6)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_4/O (LUT5)
+     1: i_4/I4 (LUT5)
+     2: i_0/O (LUT5)
+     3: i_0/I4 (LUT5)
+     4: i_150/O (LUT6)
+     5: i_150/I4 (LUT6)
+     6: i_4/O (LUT5)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_151/O (LUT6)
+     1: i_151/I4 (LUT6)
+     2: i_1/O (LUT5)
+     3: i_1/I3 (LUT5)
+     4: i_1/O (LUT5)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_0/O (LUT5)
+     1: i_0/I4 (LUT5)
+     2: i_150/O (LUT6)
+     3: i_150/I4 (LUT6)
+     4: i_4/O (LUT5)
+     5: i_4/I4 (LUT5)
+     6: i_0/O (LUT5)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_152/O (LUT6)
+     1: i_152/I0 (LUT6)
+     2: i_152/O (LUT6)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_0/O (LUT5)
+     1: i_0/I4 (LUT5)
+     2: i_150/O (LUT6)
+     3: i_150/I4 (LUT6)
+     4: i_4/O (LUT5)
+     5: i_4/I4 (LUT5)
+     6: i_0/O (LUT5)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_150/O (LUT6)
+     1: i_150/I4 (LUT6)
+     2: i_4/O (LUT5)
+     3: i_4/I4 (LUT5)
+     4: i_0/O (LUT5)
+     5: i_0/I4 (LUT5)
+     6: i_150/O (LUT6)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_149/O (LUT5)
+     1: i_149/I3 (LUT5)
+     2: i_149/O (LUT5)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+Found timing loop:
+     0: i_4/O (LUT5)
+     1: i_4/I2 (LUT5)
+     2: i_4/O (LUT5)
+WARNING: [Synth 8-295] found timing loop. [C:/Users/wdb15166/SnookerScoreboard/SnookerScoreboard.srcs/sources_1/imports/snooker/snooker.vhd:33]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 659.328 ; gain = 452.160
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 659.328 ; gain = 452.160
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 659.328 ; gain = 452.160
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 659.328 ; gain = 452.160
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 659.328 ; gain = 452.160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 659.328 ; gain = 452.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 659.328 ; gain = 452.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 659.328 ; gain = 452.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 659.328 ; gain = 452.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    14|
+|3     |LUT1   |    29|
+|4     |LUT2   |    27|
+|5     |LUT3   |    24|
+|6     |LUT4   |    12|
+|7     |LUT5   |    38|
+|8     |LUT6   |    89|
+|9     |FDRE   |    45|
+|10    |LDC    |     1|
+|11    |IBUF   |     6|
+|12    |OBUF   |    20|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------+-------+------+
+|      |Instance    |Module |Cells |
++------+------------+-------+------+
+|1     |top         |       |   307|
+|2     |  endTurnFF |d_type |    16|
++------+------------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 659.328 ; gain = 452.160
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 49 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 659.328 ; gain = 114.844
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 659.328 ; gain = 452.160
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  LDC => LDCE: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+33 Infos, 61 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 659.328 ; gain = 420.230
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 659.328 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 15 19:19:03 2018...

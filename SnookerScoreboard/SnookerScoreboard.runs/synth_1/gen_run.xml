@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1521141506">
+  <File Type="RDS-PROPCONSTRS" Name="seven_segment_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="seven_segment.tcl"/>
+  <File Type="RDS-RDS" Name="seven_segment.vds"/>
+  <File Type="RDS-UTIL" Name="seven_segment_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="seven_segment_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="seven_segment.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="seven_segment_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="seven_segment_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/snooker/d_type.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Documents/snooker/d_type.vhd"/>
+        <Attr Name="ImportTime" Val="1521133905"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/snooker/snooker.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Documents/snooker/snooker.vhd"/>
+        <Attr Name="ImportTime" Val="1521133905"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="seven_segment"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/snooker/nexys4_ddr.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Documents/snooker/nexys4_ddr.xdc"/>
+        <Attr Name="ImportTime" Val="1521133905"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
