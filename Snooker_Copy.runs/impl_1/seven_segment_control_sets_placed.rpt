@@ -1,0 +1,106 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Fri Mar 16 20:42:10 2018
+| Host         : DESKTOP-8NUMM5D running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file seven_segment_control_sets_placed.rpt
+| Design       : seven_segment
+| Device       : xc7a100t
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    43 |
+| Unused register locations in slices containing registers |   278 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              17 |           11 |
+| No           | No                    | Yes                    |               2 |            2 |
+| No           | Yes                   | No                     |              30 |           21 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              33 |           26 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------+----------------------------+-------------------------------------+------------------+----------------+
+|             Clock Signal             |        Enable Signal       |           Set/Reset Signal          | Slice Load Count | Bel Load Count |
++--------------------------------------+----------------------------+-------------------------------------+------------------+----------------+
+|  endTurnFF/debounceCount_reg[12]_P_3 |                            | endTurnFF/debounceCount_reg[12]_P_2 |                1 |              1 |
+|  endTurnFF/debounceCount_reg[13]_P   |                            | endTurnFF/debounceCount_reg[0]_P_0  |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                 |                            |                                     |                1 |              1 |
+|  endTurnFF/debounceCount_reg[0]_P_2  |                            | endTurnFF/debounceCount_reg[0]_P    |                1 |              1 |
+|  endTurnFF/debounceCount_reg[10]_P   |                            | endTurnFF/debounceCount_reg[12]_P_0 |                1 |              1 |
+|  CLK10KHZ                            |                            | rst                                 |                1 |              1 |
+|  endTurnFF/debounceCount_reg[14]_P   |                            | endTurnFF/debounceCount_reg[0]_P_1  |                1 |              1 |
+|  endTurnFF/debounceCount_reg[1]_P    |                            | endTurnFF/debounceCount_reg[4]_P    |                1 |              1 |
+|  endTurnFF/debounceCount_reg[15]_P_0 |                            | endTurnFF/debounceCount_reg[15]_P   |                1 |              1 |
+|  endTurnFF/debounceCount_reg[2]_P    |                            | endTurnFF/debounceCount_reg[4]_P_0  |                1 |              1 |
+|  endTurnFF/debounceCount_reg[3]_P    |                            | endTurnFF/debounceCount_reg[4]_P_1  |                1 |              1 |
+|  endTurnFF/debounceCount_reg[4]_P_3  |                            | endTurnFF/debounceCount_reg[4]_P_2  |                1 |              1 |
+|  endTurnFF/debounceCount_reg[5]_P    |                            | endTurnFF/debounceCount_reg[8]_P    |                1 |              1 |
+|  endTurnFF/debounceCount_reg[6]_P    |                            | endTurnFF/debounceCount_reg[8]_P_0  |                1 |              1 |
+|  endTurnFF/debounceCount_reg[7]_P    |                            | endTurnFF/debounceCount_reg[8]_P_1  |                1 |              1 |
+|  endTurnFF/debounceCount_reg[8]_P_3  |                            | endTurnFF/debounceCount_reg[8]_P_2  |                1 |              1 |
+|  endTurnFF/debounceCount_reg[9]_P    |                            | endTurnFF/debounceCount_reg[12]_P   |                1 |              1 |
+|  pot_IBUF_BUFG                       |                            |                                     |                1 |              1 |
+|  pot_IBUF_BUFG                       |                            | endTurnFF/currentPlayer_reg[0]_C    |                1 |              1 |
+|  pot_IBUF_BUFG                       |                            | endTurnFF/currentPlayer_reg[0]_P    |                1 |              1 |
+|  endTurnFF/debounceCount_reg[11]_P   |                            | endTurnFF/debounceCount_reg[12]_P_1 |                1 |              1 |
+|  pot_IBUF_BUFG                       | scorerstFF/rstTurn_reg     | endTurnFF/debounceCount_reg[15]_P_0 |                1 |              1 |
+|  pot_IBUF_BUFG                       | scorerstFF/rstTurn_reg     | endTurnFF/debounceCount_reg[12]_P_3 |                1 |              1 |
+|  pot_IBUF_BUFG                       | scorerstFF/rstTurn_reg     | endTurnFF/debounceCount_reg[13]_P   |                1 |              1 |
+|  pot_IBUF_BUFG                       | scorerstFF/rstTurn_reg     | endTurnFF/debounceCount_reg[14]_P   |                1 |              1 |
+|  pot_IBUF_BUFG                       | scorerstFF/rstTurn_reg     | endTurnFF/debounceCount_reg[1]_P    |                1 |              1 |
+|  pot_IBUF_BUFG                       | scorerstFF/rstTurn_reg     | endTurnFF/debounceCount_reg[2]_P    |                1 |              1 |
+|  pot_IBUF_BUFG                       | scorerstFF/rstTurn_reg     | endTurnFF/debounceCount_reg[3]_P    |                1 |              1 |
+|  pot_IBUF_BUFG                       | scorerstFF/rstTurn_reg     | endTurnFF/debounceCount_reg[4]_P_3  |                1 |              1 |
+|  pot_IBUF_BUFG                       | scorerstFF/rstTurn_reg     | endTurnFF/debounceCount_reg[5]_P    |                1 |              1 |
+|  pot_IBUF_BUFG                       | scorerstFF/rstTurn_reg     | endTurnFF/debounceCount_reg[6]_P    |                1 |              1 |
+|  pot_IBUF_BUFG                       | scorerstFF/rstTurn_reg     | endTurnFF/debounceCount_reg[7]_P    |                1 |              1 |
+|  pot_IBUF_BUFG                       | scorerstFF/rstTurn_reg     | endTurnFF/debounceCount_reg[8]_P_3  |                1 |              1 |
+|  pot_IBUF_BUFG                       | scorerstFF/rstTurn_reg     | endTurnFF/debounceCount_reg[9]_P    |                1 |              1 |
+|  pot_IBUF_BUFG                       | scorerstFF/rstTurn_reg     | endTurnFF/rstTurn_reg               |                1 |              1 |
+|  pot_IBUF_BUFG                       | scorerstFF/rstTurn_reg     | endTurnFF/debounceCount_reg[0]_P_2  |                1 |              1 |
+|  pot_IBUF_BUFG                       | scorerstFF/rstTurn_reg     | endTurnFF/debounceCount_reg[10]_P   |                1 |              1 |
+|  pot_IBUF_BUFG                       | scorerstFF/rstTurn_reg     | endTurnFF/debounceCount_reg[11]_P   |                1 |              1 |
+|  endTurnFF/currentPlayer_reg[0]_P    |                            | endTurnFF/currentPlayer_reg[0]_C    |                1 |              1 |
+|  pot_IBUF_BUFG                       | endTurnFF/E[0]             | scorerstFF/score0_reg[7]            |                4 |              8 |
+|  pot_IBUF_BUFG                       | endTurnFF/score1_reg[0][0] | scorerstFF/score0_reg[7]            |                5 |              8 |
+|  CLK100MHZ_IBUF_BUFG                 |                            | clear                               |                3 |             12 |
+|  CLK10KHZ                            |                            |                                     |                9 |             15 |
++--------------------------------------+----------------------------+-------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                    39 |
+| 8      |                     2 |
+| 12     |                     1 |
+| 15     |                     1 |
++--------+-----------------------+
+
+

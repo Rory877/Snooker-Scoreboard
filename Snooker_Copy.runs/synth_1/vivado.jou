@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Fri Mar 16 20:16:51 2018
+# Process ID: 1884
+# Current directory: C:/Users/User/Documents/GitHub/Snooker_Copy/Snooker_Copy.runs/synth_1
+# Command line: vivado.exe -log seven_segment.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source seven_segment.tcl
+# Log file: C:/Users/User/Documents/GitHub/Snooker_Copy/Snooker_Copy.runs/synth_1/seven_segment.vds
+# Journal file: C:/Users/User/Documents/GitHub/Snooker_Copy/Snooker_Copy.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source seven_segment.tcl -notrace
